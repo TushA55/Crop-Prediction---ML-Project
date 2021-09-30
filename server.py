@@ -1,5 +1,5 @@
-from flask import Flask, json, jsonify, request, render_template
-from flask_cors import CORS, cross_origin
+from flask import Flask, jsonify, request, render_template
+from flask_cors import CORS
 import pickle
 import numpy as np
 
