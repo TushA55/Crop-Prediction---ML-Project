@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/187/187039.png" type="image/x-icon">
+    <!-- Main.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/main.css" )}}">
+
+
+    <!-- Box Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Crop Prediction</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">Don't know which crop to <span>GROW?</span></div>
+        <div class="sub-title">Predict the most sutaible crop for your field.</div>
+        <div class="fertilizer-selectors">
+            <br><br>
+            <h3>Features</h3>
+            <div class="slider sliderN">
+                <label for="N">Nitrogen</label>
+                <input type="range" name="N" id="N" min="0" max="150">
+                <div id="Nvalue"></div>
+            </div>
+            <div class="slider sliderP">
+                <label for="P">Phosphorus</label>
+                <input type="range" name="P" id="P" min="0" max="150">
+                <div id="Pvalue"></div>
+            </div>
+            <div class="slider sliderK">
+                <label for="K">Potassium</label>
+                <input type="range" name="K" id="K" min="0" max="150">
+                <div id="Kvalue"></div>
+            </div>
+        </div>
+        <div class="fertilizer-selectors">
+            <div class="slider">
+                <label for="temperature">Temperature</label>
+                <input type="range" name="temperature" id="temperature" min="0" max="50">
+                <div id="temperatureValue"></div>
+            </div>
+            <div class="slider">
+                <label for="humidity">Humidity</label>
+                <input type="range" name="humidity" id="humidity" min="0" max="150">
+                <div id="humidityValue"></div>
+            </div>
+            <div class="slider">
+                <label for="rainfall">Rainfall</label>
+                <input type="range" name="rainfall" id="rainfall" min="0" max="300">
+                <div id="rainfallValue"></div>
+            </div>
+        </div>
+        <div class="fertilizer-selectors">
+            <div class="slider">
+                <label for="ph">pH</label>
+                <input type="range" name="ph" id="ph" min="0" max="14">
+                <div id="phValue"></div>
+            </div>
+        </div>
+        <div id="you">You should grow: </div>
+        <div class="crop-name" id="crop-name"></div>
+        <i class='bx bxl-github' title="Tusha55"></i>
+        <i class='bx bxl-linkedin-square' style='color:#0a66c2'></i>
+    </div>
+    <script src="{{ url_for('static', filename="js/main.js") }}"></script>
+</body>
+
+</html>

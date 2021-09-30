@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    display: block;
+    text-align: center;
+}
+
+.main .title {
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    color: blueviolet;
+    text-align: center;
+}
+
+.main .title span{
+    font-size: 70px;
+    color: green;
+}
+
+.main .sub-title{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+
+.main .fertilizer-selectors .slider input{
+    -webkit-appearance: none;
+    width: 200px;
+    height: 10px;
+    border-radius: 5pc;
+    background: #e5e5e5;
+    outline: none;
+    margin: 20px 10px;
+}
+
+.slider{
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 30px;
+}
+
+.slider label{
+    display: block;
+}
+
+.main .fertilizer-selectors .slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #6280ee;
+    border-radius: 50%;
+    cursor: grab;
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(98, 0, 238, .1);
+    transition: .3s ease-in-out;
+}
+
+.main .fertilizer-selectors .slider input::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 0 10px rgba(98, 0, 238, .1);
+}
+
+.main .fertilizer-selectors .slider input:active::-webkit-slider-thumb{
+    cursor: grabbing;
+    box-shadow: 0 0 0 18px rgba(98, 0, 238, .2);
+}
+
+#you{
+
+    margin-top: 60px;
+}
+
+.main .crop-name{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+i{
+    position: absolute;
+    font-size: 40px;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.bxl-linkedin-square{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .bxl-linkedin-square{
+        margin-right: 50px;
+        margin-top: 0;
+    }
+  }

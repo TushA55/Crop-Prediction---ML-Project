@@ -1,0 +1,18 @@
+[
+    {
+        "model": "Decision Tree",
+        "acc": " 0.90"
+    },
+    {
+        "model": "Naive Bayes",
+        "acc": " 0.99"
+    },
+    {
+        "model": "SVM",
+        "acc": " 0.11"
+    },
+    {
+        "model": "Random Forest",
+        "acc": " 0.99"
+    }
+]

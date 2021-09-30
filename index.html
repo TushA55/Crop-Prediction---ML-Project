@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Gradient Background</title>
+</head>
+
+<body>
+    <input type="color" name="color1" id="color1" value="#00ff00">
+    <input type="color" name="color2" id="color2" value="#ff0000">
+    <h2>Current CSS Background</h2>
+    <script>
+        var color1 = document.getElementById("color1")
+        var color2 = document.getElementById("color2")
+        color1.onchange = function () {
+            console.log(color1.value);
+        }
+        color2.onchange = function () {
+            console.log(color2.value);
+        }
+    </script>
+</body>
+
+</html>
