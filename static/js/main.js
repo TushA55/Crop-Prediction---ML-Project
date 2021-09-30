@@ -49,7 +49,7 @@ function getCropName() {
         rainfall: rainfall.value,
         ph: ph.value
     }
-    fetch("http://localhost:5000/predict_crop", {
+    fetch(`http://${location.host}/predict_crop`, {
         method: "POST",
         mode: "cors",
         headers: {

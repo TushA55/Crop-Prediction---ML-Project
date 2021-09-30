@@ -55,4 +55,4 @@ def predict_crop():
     return jsonify({"crop": crop_name})
 
 
-app.run(debug=True, host="localhost", port=5000)
+app.run(debug=True, host="0.0.0.0", port=5000)
